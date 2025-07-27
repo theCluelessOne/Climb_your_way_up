@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+}
+
+.cont {
+  display: grid;
+  width: 600px;
+  grid-template-columns: repeat(10, 1fr);
+  height: 600px;
+  margin: 0px 0 0px 0;
+  
+
+}
+
+.cont div {
+  width: 60px;
+  height: 60px;
+  
+  border: 0.2px solid black;
+}
+
+#p1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: rgb(236, 82, 82);
+  position: relative;
+  border: 3px solid black;
+
+  /* position: absolute; */
+}
+
+#p1 {
+  position: relative;
+  top: 15px;
+  transition: all linear 0.5s;
+  /* top: 0; */
+  left: -62px;
+  z-index: 2;
+}
+
+
+img {
+  position: relative;
+  top: -600px;
+  left: 8px;
+  /* z-index: -1; */
+  margin: 0;
+  width: 615px;
+  height: 615px;
+}
+#diceCont {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  font-size: 2rem;
+  z-index: 99;
+}
+#diceBtn {
+  z-index: 99;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(75, 140, 197);
+  border-radius: 5px;
+  width: 200px;
+}
+
+@media (max-width: 1250px) {
+  
+  #diceCont {
+    display: flex;
+    place-items: none;
+    top: 92vh;
+    left: 36vw;
+    border: 2px solid red;
+  }
+  #diceBtn {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1250px) {
+  
+  #diceCont {
+    display: flex;
+    place-items: none;
+    top: 99vh;
+    left: 10vw;
+    /* border: 2px solid red; */
+  }
+  #diceBtn {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+
+.navbar {
+    background: #222;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Container for content alignment */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand .nav-logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.navbar-brand .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.navbar-auth .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navbar-auth .user-points {
+    margin-right: 15px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1 0 auto; /* Grow to fill available space, ensuring footer stays at bottom */
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.footer .container {
+    text-align: center;
+}
